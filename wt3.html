@@ -1,0 +1,94 @@
+<!DOCTYPE html>	
+<html>
+<head>
+<title>Assignment-3</title>
+</head>
+<body>
+  <style>
+p {
+position: absolute;
+right:450px;
+bottom: 450px;
+transform: translate(-50%, -50%);
+}
+</style>
+  
+      <link rel="stylesheet" href="Assignment3.css">
+      <title>Program3</title>
+     <header>
+          <nav>
+          <a href="/html">HOME</a> |
+          <a href="/html">PLACES</a> |
+          <a href="/html">GALLERY</a> |
+          <a href="/html">ABOUT US</a>
+        </nav>
+      </header> 
+        <h2><u>Vampire Dairies</u></h2>
+      <p id="demo"></p>
+      <script>
+      var var1 = setInterval(inTimer, 500);
+      var fs = 5; 
+      var ids = document.getElementById("demo");
+      function inTimer()
+      {
+        ids.innerHTML = 'Vampire Dairies';
+        ids.setAttribute('style', "font-size: " + fs + "px; color: #33ccff");
+        fs += 5;
+        if (fs >= 50)
+        {
+          clearInterval(var1);
+          var2 = setInterval(deTimer, 500);
+        }
+      }
+    function deTimer()
+      {
+        fs -= 5;
+        ids.innerHTML = 'Vampire Dairies';
+        ids.setAttribute('style', "font-size: " + fs + "px; color: #ff3333");
+       if (fs == 5)
+        {
+          clearInterval(var2);
+          var1 = setInterval(inTimer, 500);
+        }
+      }
+</script>
+      <title>Vampire Dairies</title>
+      <img src="C:\Users\HP\Desktop\wt_pr3\vd.png" alt="Vampire Dairies" width="400" height="233">
+      <br>
+      <h3>by<a href="/html"> Thanani</a></h3>
+      <article>The Vampire Diaries is an American supernatural teen drama television series developed by Kevin Williamson and Julie Plec, based on the popular book series of the same name written by L. J. Smith. The series premiered on The CW on September 10, 2009, and concluded on March 10, 2017, having aired 171 episodes over eight seasons.</article>
+      <br>    
+      <section> Year:2020<br>
+               Date:12 th March</section>
+      <h3><u> Reviews</u></h3>      
+      <section>
+        <strong>I love Vampire Dairies!!!</strong>
+        <br>
+        <stong> Hari</strong><img src="C:\Users\HP\Desktop\wt_pr3\r5.png" alt="rating";>      
+          <br>
+        <strong>One of my favourite series</strong><br>
+        <hr>
+        <strong>Always my fav</strong> 
+        <br>
+        <stong>Joseph</strong><img src="C:\Users\HP\Desktop\wt_pr3\r3.png" alt="rating";>
+          <br>
+        <strong>Good one</strong><br>
+        <hr>
+        <strong>I like damon</strong>
+        <br>
+        <stong>Teju</strong><img src="C:\Users\HP\Desktop\wt_pr3\r2.png" alt="rating";>
+          <br>
+          <strong>Nice</strong><br>
+        <hr>
+      </section>
+       <footer><nav>
+          <a href="/html">HOME</a> |
+          <a href="/html">PLACES</a> |
+          <a href="/html">GALLERY</a> |
+          <a href="/html">ABOUT US</a>
+        </nav>
+<br>
+<strong><i>Copyright &copy; 2021 by Thanani</i></strong>
+</footer>
+</body>
+</html>
